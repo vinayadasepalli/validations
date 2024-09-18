@@ -3,7 +3,7 @@
 
 def vailidate_user(username, minlen):
     """Checks if the received username matches the required conditions."""
-    if type(username) != str:
+    if type(username) != str: """ check if the type of the username is a string."""
         raise TypeError("username must be a string")
     if minlen < 1:
         raise ValueError("minlen must be at least 1".)
